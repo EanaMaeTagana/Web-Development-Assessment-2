@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cookie&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital@0;1&display=swap">
+    <link rel="stylesheet" href="stylesheet/landingpage.css" type="text/css">
+    <link rel="stylesheet" href="stylesheet/default.css" type="text/css">
+    <title>CherryPicked</title>
+</head>
+<body>
+
+    <!---------- Header & Navigation ---------->
+    <header>
+        <!-- Header contains the website's name and the navigation bar that links to the other website pages. -->
+        <nav>
+            <ul>
+                <!-- List containing the links to the other website pages. -->
+                <li><a href="pages/services.html">SERVICES</a></li>
+                <li><a href="pages/aboutus.html">ABOUT US</a></li>
+                <li><a href="pages/shop.html">SHOP</a></li>
+                <li><a href="pages/collection.html">COLLECTIONS</a></li>
+                <li><a href="pages/contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <h1>CherryPicked</h1>
+    </header>
+
+    <!---------- Main Content ---------->
+    <main>
+
+        <!---------- Landing Page ---------->
+        <div class="container">
+            <!-- Grid that will contain all images on the landing page. -->
+            <div id="pictureGrid">
+                <img src="images/landingpageimages/front1.png">
+                <img src="images/landingpageimages/front2.png">
+                <img src="images/landingpageimages/front3.png">
+                <img src="images/landingpageimages/front4.png">
+            </div>
+            <!-- Section that contains the CTA statement. -->
+            <section id="landingPage">
+                <!-- H2 with class for easier styling. -->
+                <h2 class="yellowtailH2">Hand-picked vintage collections curated for you.</h2>
+                <!-- Button to lead to the allocated page. -->
+                <a href="pages/collection.html" class="redbutton"><button>VIEW COLLECTIONS</button></a>
+            </section>
+        </div>
+
+        <!---------- Our Story ---------->
+        <div class="container" id="ourStory">
+            <!-- Section containing an about us. -->
+            <section>
+                <img src="images/cherry.png">
+                <!-- H2 with class for easier styling. -->
+                <h2 class="yellowtailH2">Dedication to Curation</h2>
+                <p>At CherryPicked, discover a  curation of timeless vintage fashion. With a <br>passion for quality and style, each piece is carefully “cherry-picked” <br>to bring you unique pieces that embody the charm of yesterday.</p>
+                <!-- Button to lead to the in-depth page. -->
+                <a href="pages/aboutus.html" class="whitebutton"><button>OUR STORY</button></a>
+            </section>
+        </div>
+
+        <!---------- Shop ---------->
+        <div class="container" id="shopUs">
+            <!-- Section containing some of the shop items. Each item is within its own article. -->
+            <section>
+                <div class="container"></div>
+                <!-- H2 with class for easier styling. -->
+                <h2 class="lilitaH2">SHOP US</h2>
+                <!-- Grid to contain all items. -->
+                <div id="shopGrid">
+                    <!-- Each article that contains an item is classed as a box to enable scrolling transition. Works with javascript. -->
+                    <!-- Item 1 -->
+                    <article class="box">
+                        <img src="images/landingpageshopitems/item1.png">
+                        <p>Soft Push-Lock Tote - $56.00</p>
+                    </article>
+                    <!-- Item 2 -->
+                    <article class="box">
+                        <img src="images/landingpageshopitems/item2.png">
+                        <p>Cherry Red Queen Anne - $12.00</p>
+                    </article>
+                    <!-- Item 3 -->
+                    <article class="box">
+                        <img src="images/landingpageshopitems/item3.png">
+                        <p>Miami Satin Ruffle Dress - $23.00</p>
+                    </article>
+                    <!-- Item 4 -->
+                    <article class="box">
+                        <img src="images/landingpageshopitems/item4.png">
+                        <p>Santorini Lace Knit Skirt - $18.00</p>
+                    </article>
+                    <!-- Item 5 -->
+                    <article class="box">
+                        <img src="images/landingpageshopitems/item5.png">
+                        <p>Ruffle Bowknot Mini Dress - $23.00</p>
+                    </article>
+                    <!-- Item 6 -->
+                    <article class="box">
+                        <img src="images/landingpageshopitems/item6.png">
+                        <p>Denim Mid Rise Skirt - $35.00</p>
+                    </article>
+                    <!-- Item 7 -->
+                    <article class="box"> 
+                        <img src="images/landingpageshopitems/item7.png">
+                        <p>Ruched Square Neck Top - $10.00</p>
+                    </article>
+                    <!-- Item 8 -->
+                    <article class="box">
+                        <img src="images/landingpageshopitems/item8.png">
+                        <p>Lace Crop Tank Top - $18.00</p>
+                    </article>
+                </div>
+                <!-- Button linked to the shop page with more items. -->
+                <a href="pages/shop.html" class="redbutton"><button>SHOP MORE</button></a>
+            </section>
+        </div>
+
+        <!---------- Collections ---------->
+        <div class="container" id="curatedCollection">
+            <!-- Section to contain the collections section. -->
+            <section>
+                <p>Want something cherry-picked just for you?</p>
+                <!-- Button to lead to the collections page containing all items. -->
+                <a href="pages/collection.html"><button>Shop our curated collections.</button></a>
+            </section>
+        </div>
+
+        <!---------- Testimonials ---------->
+        <div class="container" id="testimonials">
+            <!-- Section containing the testimonials. -->
+            <section>
+                <!-- H2 with class for easier styling. -->
+                <h2 class="lilitaH2">WHAT OTHERS ARE SAYING</h2>
+                <!-- Grid to contain all the reviews. Each review is within its own article. -->
+                <div id="testimonialsGrid">
+                    <!-- Review 1 -->
+                    <article>
+                        <h3>@VintageVibesByJane <span>★★★★★</span></h3>
+                        <p>exceeded my expectations with their attention to detail and dedication to customer satisfaction. Found some amazing pieces I adore.</p>
+                    </article>
+                    <!-- Review 2 -->
+                    <article>
+                        <h3>@FashionRevived <span>★★★★</span></h3>
+                        <p>Their repair service revived my favorite dress - top-notch work!</p>
+                    </article>
+                    <!-- Review 3 -->
+                    <article>
+                        <h3>@CustomCoutureKate <span>★★★★★</span></h3>
+                        <p>Customized jacket was spot-on, thanks to Cherry Picked!.</p>
+                    </article>
+                    <!-- Review 4 -->
+                    <article>
+                        <h3>@RetroStyleMaven <span>★★★★</span></h3>
+                        <p>Their vintage selection is just *chef's kiss*! Reccomending this place to EVERYONE.</p>
+                    </article>
+                    <!-- Review 5 -->
+                    <article>
+                        <h3>@ChicAndVintageFinds <span>★★★★★</span></h3>
+                        <p>Exceptional customer service at Cherry Picked! Their team took the time to understand my style preferences. Can't wait to shop here again!</p>
+                    </article>
+                    <!-- Review 6 -->
+                    <article>
+                        <h3>@TimelessThreadsCo <span>★★★★★</span></h3>
+                        <p>The dedication to 'vintage'' is truly unmatched - highly recommended!</p>
+                    </article>
+                </div>
+                <!-- Button to lead to the contact page. -->
+                <a href="pages/contact.html" class="redbutton"><button>FOLLOW ALONG</button></a>
+            </section>
+        </div>
+
+        <!---------- Call to Action ---------->
+        <section class="container" id="finalCTA">
+            <!-- Section to contain the final CTA statement. -->
+            <h2>Pick your style today.</h2>
+        <section class="container">
+            
+    </main>
+
+    <!---------- Footer Border ---------->
+    <div class="border">
+        <!-- Division used to contain a grid that acts as the footer's border. Each item is an image. -->
+        <img src="images/border/cherryredwhite.png">
+        <img src="images/border/cherrywhitered.png">
+        <img src="images/border/cherryredwhite.png">
+        <img src="images/border/cherrywhitered.png">
+        <img src="images/border/cherryredwhite.png">
+        <img src="images/border/cherrywhitered.png">
+        <img src="images/border/cherryredwhite.png">
+        <img src="images/border/cherrywhitered.png">
+        <img src="images/border/cherryredwhite.png">
+        <img src="images/border/cherrywhitered.png">
+        <img src="images/border/cherryredwhite.png">
+        <img src="images/border/cherrywhitered.png">
+        <img src="images/border/cherryredwhite.png">
+        <img src="images/border/cherrywhitered.png">
+        <img src="images/border/cherryredwhite.png">
+        <img src="images/border/cherrywhitered.png">
+        <img src="images/border/cherryredwhite.png">
+        <img src="images/border/cherrywhitered.png">
+        <img src="images/border/cherryredwhite.png">
+        <img src="images/border/cherrywhitered.png">
+        <img src="images/border/cherryredwhite.png">
+        <img src="images/border/cherrywhitered.png">
+        <img src="images/border/cherryredwhite.png">
+        <img src="images/border/cherrywhitered.png">
+        <img src="images/border/cherryredwhite.png">
+    </div>
+
+    <!---------- Footer ---------->
+    <footer>
+        <!-- Footer containing all the links to the other pages and contact details. -->
+        <div class="footerLinks">
+            <!-- The sections are divided into three to be able to be put into a grid. -->
+            <section>
+                <h2>CherryPicked</h2>
+                <p>Hand-picked vintage collections curated for you.</p>
+            </section>
+            <section class="section1">
+                <ul>
+                    <!-- List containing the links to the other pages. -->
+                    <li><a href="pages/landingpage.html"">HOME</a></li>
+                    <li><a href="pages/services.html">SERVICES</a></li>
+                    <li><a href="pages/aboutus.html">ABOUT US</a></li>
+                    <li><a href="pages/shop.html">SHOP</a></li>
+                    <li><a href="pages/collection.html">COLLECTIONS</a></li>
+                    <li><a href="pages/contact.html">CONTACT</a></li>
+                </ul>
+            </section>
+            <section class="section2">
+                <ul>
+                    <li>CONTACT:</li>
+                    <li>CherryPicked@gmail.com</li>
+                    <li>+805 084 4191</li>
+                    <li>315 HAYWOOD ROAD, #17</li>
+                </ul>
+            </section>
+        </div>
+        <hr> <!-- Horizontal rule line. -->
+        <p class="footerCredit">© 2024 CherryPicked</p>
+    </footer>
+
+    <!---------- Loading Screen ---------->
+    <div class="loadingScreen" id="loadingScreen">
+        <!-- The screen that will initially be seen upon opening the website. Works with javascript.-->
+        <div class="loadingText">
+            <img src="images/cherry.png" alt="">
+            <p id="click">Start picking!</p>
+            <p>CLICK TO ENTER.</p>
+        </div>
+    </div>
+
+<!---------- Javascript ---------->    
+<script src="javascript/cherrypicked.js"></script>
+</body>
+</html>

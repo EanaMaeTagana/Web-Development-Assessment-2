@@ -1,0 +1,184 @@
+/* This stylesheet contains the styles used throughout all the pages. */
+
+/* -- Default Styles -- */
+* { /* Sets the style for all elements. */
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Source Sans 3', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
+    color: var(--cherry);
+    text-align: center;
+    letter-spacing: 0px;
+}
+:root { /* Root used to make colors as variables. */
+    --cherry: #F26659;
+    --beige: #FDFAEF;
+    --mustard: #FFBD59;
+}
+body { /* Sets the style for all body elements. */
+    background-color: var(--beige);
+    overflow-x: hidden;
+}
+p {
+    line-height: 150%;
+}
+button {
+    margin: 2%;
+    padding: 0.4% 3% 0.4% 3%;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+.container { /* Sets the style for the class container. */
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    background-color: var(--beige);
+}
+.yellowtailH2 { /* Sets the style for the class yellowtailH2. Used with h2 elements. */
+    font-family: 'Yellowtail', cursive;
+    font-size: 3rem;
+}
+.lilitaH2 { /* Sets the style for the class lilitaH2. Used with h2 elements. */
+    font-family: "Lilita One", sans-serif;
+    font-size: 3rem;
+}
+
+/* -- Header & Navigation -- */
+header {
+    text-align: center;
+    background-color: var(--beige);
+}
+nav ul {
+    list-style-type: none;
+    padding: 2%;
+}
+nav ul li {
+    display: inline;
+    padding: 2% 1% 2% 1%;
+    font-weight: bold;
+    cursor: pointer;
+}
+nav ul li a {
+    border: 2px solid var(--beige);
+    padding: 0% 0.5% 0% 0.5%;
+}
+nav ul li a:hover { /* Sets the style for when the links are hovered on. */
+    border: 2px solid var(--cherry);
+    border-radius: 30px;
+}
+nav ul li a:focus { /* Sets the style for when the links are clicked on. */
+    border: 2px solid var(--cherry);
+    background-color: var(--cherry);
+    border-radius: 30px;
+    color: var(--beige);
+}
+.pageFocus { /* Allows for the page name to be highlighted when user is on the page. */
+    border: 2px solid var(--cherry);
+    background-color: var(--cherry);
+    border-radius: 30px;
+    color: var(--beige);
+}
+
+/* -- Header Website Title -- */
+header h1 {
+    font-size: 5rem; 
+    text-align: center;
+    color: var(--cherry);
+    font-family: 'Cookie', sans-serif;
+}
+header h1:hover { /* Sets the style for when the website title is hovered on. */
+    color: var(--mustard);
+    rotate: -2deg;
+}
+.pageTitle {
+    padding-top: 2%;
+    font-size: 5rem; 
+    text-align: center;
+    color: var(--cherry);
+    font-family: 'Cookie', sans-serif;
+}
+
+/* -- Footer -- */
+footer {
+    background-color: var(--cherry);
+    padding: 2.5% 5%;
+}
+.footerLinks {
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    margin-bottom: 3%;
+}
+.footerCredit {
+    margin-top: 3%;
+    color: var(--beige);
+    text-align: left;
+}
+.section1 {
+    margin-left: 50%;
+}
+.section2 {
+    margin-left: 30%;
+}
+
+/* -- Footer Navigation -- */
+footer ul {
+    list-style-type: none;
+}
+footer ul li a {
+    color: var(--beige);
+    font-size: 0.9rem;
+}
+footer ul li a:hover {
+    background-color: var(--mustard);
+}
+
+/* -- Footer Styles -- */
+.footerLinks h2, .footerLinks p, .footerLinks ul li {
+    color: var(--beige);
+    text-align: left;
+}
+.footerLinks ul li {
+    font-size: 0.9rem;
+}
+.footerLinks h2 {
+    font-family: 'Cookie', sans-serif;
+    font-size: 3.5rem;
+}
+hr {
+    border: 1.5px solid var(--beige); 
+    background-color: var(--cherry);
+}
+
+/* -- Footer Border -- */
+.border {
+    display: grid;
+    grid-template-columns: repeat(25,  4%);
+}
+.border img {
+    width: 4vw;
+    height: 4vw;
+}
+
+/* -- Buttons -- */
+.redbutton button { 
+    background-color: var(--cherry);
+    font-size: 1rem;
+    color: var(--beige);
+}
+.redbutton button:hover {
+    background-color: var(--mustard);
+    rotate: 2deg;
+}
+.whitebutton button {
+    background-color: var(--beige);
+    font-size: 1rem;
+    color: var(--cherry);
+}
+.whitebutton button:hover {
+    background-color: var(--mustard);
+    color: var(--beige);
+    rotate: -2deg;
+}

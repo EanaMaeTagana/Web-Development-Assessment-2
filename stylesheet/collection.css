@@ -1,0 +1,32 @@
+/* This stylesheet contains all the styles only for collections page */
+
+#collections {
+    margin-top: 4%;
+}
+#collections article {
+    padding: 5% 2%;
+}
+.collectionsitemgrid {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+.red {
+    background-color: var(--cherry) !important; /* !important allows for the styles to override any other styles. */
+}
+.red h2, .red p {
+    color: var(--beige);
+}
+.redimg img {
+    border: 2.5px solid var(--cherry);
+}
+.whiteimg img {
+    border: 2.5px solid var(--beige);
+}
+.collectionsitemgrid img {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 25px;
+}
+.collectionsitemgrid img:hover {
+    scale: 1.1;
+}

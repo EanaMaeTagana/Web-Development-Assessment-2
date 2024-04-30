@@ -1,0 +1,150 @@
+/* This stylesheet contains all the styles only for the landing page. */
+
+/* -- Loading Screen -- */
+.loadingScreen { /* Enables the loading screen to be on top of all elements within the landing page. */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cherry); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; 
+    transition: opacity 2.5s ease; 
+    opacity: 1; 
+}
+.loadingText p {
+    color: var(--beige); 
+}
+.loadingText img {
+    width: 5vw;
+    height: 5vw;
+}
+#click { 
+    font-family: 'Yellowtail', cursive;
+    font-size: 3rem;
+    margin-top: -5%;
+    padding-bottom: 4%;
+}
+.hide { /* Hides the loading screen once clicked. */
+    opacity: 0; 
+    pointer-events: none; /* Removes the ability to have the loading screen be clickable. */
+}
+
+/* -- Landing Page -- */
+#pictureGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    padding-top: 1.5%;
+    padding-bottom: 2%;
+}
+#pictureGrid img {
+    width: 25vw;
+    height: 25vw;
+}
+#pictureGrid img:hover {
+    rotate: -3.5deg;
+}
+#landingPage button {
+    margin-bottom: 5%;
+}
+
+/* -- Landing Page (Our Story) -- */
+#ourStory img {
+    width: 5vw;
+    height: 5vw;
+}
+#ourStory section {
+    padding: 12%;
+}
+#ourStory a{
+    background-color: none;
+}
+#ourStory, #ourStory h2, #ourStory p, #ourStory section {
+    background-color: var(--cherry);
+    color: var(--beige);
+}
+
+/* -- Landing Page (Shop Us) -- */
+#shopUs section {
+    padding: 5%;
+}
+#shopGrid {
+    padding: 3% 0% 8% 0%;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2);
+    row-gap: 10%;
+}
+#shopGrid img {
+    width: 15vw;
+    height: 15vw;
+    border: 2.5px solid var(--beige);
+}
+#shopGrid img:hover {
+    scale: 1.1;
+}
+
+/* -- Landing Page (Shop Us) Scroll Transition -- */
+.box { /* Hide the item boxes. Works with javascript. */
+    transform: translateX(500%);
+    transition: transform 2.5s ease;
+}
+.show { /* Shows the item boxes. */
+    transform: translateX(0);
+}
+
+/* -- Landing Page (Curated Collections) -- */
+#curatedCollection section {
+    padding: 6% 5% 5% 4%;
+}
+#curatedCollection p {
+    font-size: 2rem;
+}
+#curatedCollection button {
+    margin: 0%;
+    padding: 1% 0% 0% 0%;
+    background-color: var(--cherry);
+    color: var(--beige);
+    font-family: 'Yellowtail', cursive;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+#curatedCollection button:hover {
+    color: var(--mustard);
+}
+#curatedCollection, #curatedCollection h2, #curatedCollection p, #curatedCollection section {
+    background-color: var(--cherry);
+    color: var(--beige);
+}
+
+/* -- Landing Page (Testimonials) -- */
+#testimonialsGrid {
+    padding-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+}
+#testimonials section {
+    padding: 6% 5% 0% 5%;
+    justify-content: center;
+}
+#testimonials article {
+    padding: 5%;
+}
+#testimonials h3, #testimonials p {
+    text-align: justify;
+}
+#testimonials span {
+    color: var(--mustard);
+}
+
+/* -- Landing Page (CTA) -- */
+#finalCTA h2 {
+    padding: 4% 0% 6% 0%;
+    font-size: 5rem; 
+    text-align: center;
+    color: var(--cherry);
+    font-family: 'Cookie', sans-serif;
+}

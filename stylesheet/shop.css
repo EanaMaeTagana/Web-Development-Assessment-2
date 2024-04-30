@@ -1,0 +1,45 @@
+/* This stylesheet contains all the styles only for the shop page. */
+
+#shopGrid {
+    padding: 3% 0% 8% 0%;
+    margin: 2% 0% 18% 0%;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    row-gap: 5%;
+}
+#shopGrid img {
+    width: 15vw;
+    height: 15vw;
+    border: 2.5px solid var(--beige);
+}
+#shopGrid img:hover {
+    scale: 1.1;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Verdana, sans-serif;
+}
+.slide {
+    display: none;
+}
+img {
+    width: 50vw;
+    margin-top: 2%;
+}
+
+/* -- Shop Slideshow -- */
+/* Styles for the shop slideshow. Works with javascript. */
+#slideshowContainer {
+    position: relative;
+    margin: auto;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade {
+    from { opacity: .4; } 
+    to { opacity: 1; }
+}

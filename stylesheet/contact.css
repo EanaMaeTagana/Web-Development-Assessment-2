@@ -1,0 +1,33 @@
+/* This stylesheet contains all the styles only for the contact us page. */
+
+#formcontainer {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 4%;
+    margin-bottom: 10%;
+}
+label {
+        text-align: left;
+        display: block;
+}
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 1%;
+    margin-bottom: 2%;
+    border: 2px solid var(--cherry);
+    border-radius: 10px;
+    background-color: var(--beige);
+    text-align: left;
+}
+input[type="submit"] {
+    width: 100%;
+    padding: 1%;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--cherry);
+    color: var(--beige);
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: var(--mustard);
+}

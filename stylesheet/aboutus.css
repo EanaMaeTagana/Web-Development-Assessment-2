@@ -1,0 +1,16 @@
+/* This stylesheet contains all the styles only for the about us page. */
+
+#aboutUs {
+    padding: 5% 0% 10% 0%; 
+}
+#aboutUs img {
+    width: 5vw;
+    height: 5vw;
+}
+#aboutUs h2 {
+    padding: 0.5% 0% 2% 0%;
+}
+#aboutUs p {
+    padding: 0% 12%;
+    font-size: 1.2rem;
+}
